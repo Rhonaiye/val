@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      let timeLeft = 3;
+
+      function updateCountdown() {
+        const countdownElement = document.getElementById("countdown");
+        if (timeLeft > 0) {
+          countdownElement.innerText = `Redirecting to WhatsApp in ${timeLeft} seconds...`;
+          timeLeft--;
+          setTimeout(updateCountdown, 1000);
+        } else {
+          window.location.href = "https://wa.me/+2349131215984?text=Yes%2C%20I%20will%20be%20your%20val%20daddy;)%20"; 
+        }
+      }
+
+      window.onload = function () {
+        updateCountdown();
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/ydj8MGT3/bear-kiss-bear-kisses.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div>
+        <h1 class="header_text">oK Yay !</h1>
+        <p id="countdown" class="countdown_text"></p>
+      </div>
+    </div>
+  </body>
+</html>
